@@ -22,6 +22,8 @@ Including an example of how to use your role (for instance, with variables passe
 
 ## License
 
+Barrowed the testing from [gantsign][af0a2976]
+
 BSD
 
 ## Author Information
@@ -29,3 +31,4 @@ BSD
 Joseph Harry findarato@gmail.com [B6D9 0CE5 3D97 0FB7][4f07f440]
 
 [4f07f440]: https://keybase.io/findarato/pgp_keys.asc?fingerprint=8a6ba1aff814f0776faa9dc2b6d90ce53d970fb7 "Public Key"
+[af0a2976]: https://github.com/gantsign/ansible-role-oh-my-zsh "github"
