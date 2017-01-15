@@ -1,13 +1,13 @@
 ---
 
 - name:             Running OS Specific Commands and Configurations
-  include_vars:     "{{ osVer }}"
+  include_vars:     "{{ item }}"
   with_first_found:
     - "{{ansible_distribution}}-{{ansible_distribution_release}}.yml"
     - "{{ansible_distribution}}.yml"
     - "{{ansible_os_family}}.yml"
-  loop_control:
-    loop_var:       osVer
+  # loop_control:
+  #   loop_var:       osVer
 
 - name:             Add VirtualBox Repo
   get_url:
@@ -40,8 +40,8 @@
 - name:             Install needed  {{ ansible_distribution }} Specific packages
   dnf:
     state:          present
-    name:           "{{ osDistro }}"
+    name:           "{{ item}}"
   with_items:
     - "{{ VirtualBox_Dependances }}"
-  loop_control:
-    loop_var:       osDistro
+  # loop_control:
+  #   loop_var:       osDistro
