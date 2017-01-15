@@ -20,7 +20,5 @@
         warn: no
       changed_when: no
       when: ansible_pkg_mgr == 'dnf'
-
-
   roles:
     - role: Ansible-VirtualBox
