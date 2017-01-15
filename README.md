@@ -1,5 +1,7 @@
 # Ansible: Virtual Box
 
+[![Build Status](https://travis-ci.org/Findarato/Ansible-VirtualBox.svg?branch=master)](https://travis-ci.org/Findarato/Ansible-VirtualBox)
+
 This role will install VirtualBox for Fedora 25, and Ubuntu 16.04
 
 It should always work with the latest LTS of Ubuntu and release of Fedora
